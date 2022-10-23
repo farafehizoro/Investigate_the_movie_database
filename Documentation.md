@@ -1,1 +1,33 @@
 # Investigation of the movie database
+
+## Introduction
+
+This study is about the **The TMDb movie data**, which is a dataset containing informations about around 10000 movies, collected from the The Movie Database (TMDb). The data go from 1960 to 2015. Here are the list of the informations (columns) in the dataset:
+
+* id: the identification of the movie in the TMDb.
+* imdb_id: the identification of the movie in the IMBD (Internet Movie Database).
+* popularity: rate of popularity of the movie based on different metrics (Number of votes for the day, Number of views for the day, Number of users who marked it as a "favourite" for the day, Number of users who added it to their "watchlist" for the day, Release date, Number of total votes, Previous days score).
+* budget: the actual budget in dollar.
+* revenue: the actual revenue in dollar.
+* original_title.
+* cast: list of the main actors in the movie.
+* homepage: the website of the movie.
+* director: the name of the director.
+* tagline: a catchy sentence describing the movie.
+* keywords: list of the keywords.
+* overview: the overview of the movie.
+* runtime: length of the movie in minutes.
+* genres:list of the genre of the movie (a movie can have more than one genre classification).
+* production_companies: list of companies who had produced the movie (can be more than one).
+* release_date.
+* vote_count: number of vote.
+* vote_average.
+* release_year.
+* budget_adj: the adjusted budget of the movie in term of 2010 dollars, accounting for inflation other time.
+* revenue_adj: the adjusted revenue of the movie in term of 2010 dollars, accounting for inflation other time.
+
+### Questions for this analysis: 
+* Have movies (length, budget and revenue) changed with time?
+* Is there a relationship between movie's lenght, budget and revenue?
+* How are of movie's length, budget and year of release in general?
+* Is a movie's popularity related to its propriety (year of release, length and budget)?
