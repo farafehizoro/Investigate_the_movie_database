@@ -5,6 +5,11 @@ import seaborn as sns
 
 sns.set_style('darkgrid')
 
+#fuction definition
+def replace_zero(serie): 
+    serie.replace(0,np.nan, inplace=True)
+    return;
+    
 df_movie=pd.read_csv("tmdb-movies.csv")
 
 #dataset description
@@ -22,3 +27,9 @@ df_movie.drop_duplicates(inplace=True)
 #data type conversion
 df_movie['budget_adj']=df_movie['budget_adj'].astype(int)
 df_movie['revenue_adj']=df_movie['revenue_adj'].astype(int)
+
+replace_zero(df_movie['revenue'])
+replace_zero(df_movie['revenue_adj'])
+replace_zero(df_movie['budget'])
+replace_zero(df_movie['budget_adj'])
+replace_zero(df_movie['runtime'])

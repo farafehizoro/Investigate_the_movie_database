@@ -49,3 +49,6 @@ There are 21 columns in the data set, some of them are not useful in our investi
 **Cleaning step 1:** indentifying and cleaning the duplicated data
 
 **Cleaning step 2:** Conversion of the data type in the columns: budget_adj and revenue_adj
+
+**Cleaning step 3:** replacing of budget, budget_adj, revenue, revenue_adj and runtime equal to 0 into nan
+__Explanation: for some rows, the runtime, budget or revenue are zero, which is anormal. We can assume that those zero represent 'missing data'. We can't keep them as zero because it will affect the statistics we are going to compute in out analysis. (for example: the mean). So, we will convert them into nan. Then, we could drop the row with missing value, but in consequence, we will lose the informations in the other columns. Also, we can replace the missing value with the mean (for example), but given the proportion of missing value and the fact that we would do calculation year by year, it is better to keep them missing and just ignoring them in the calculation. (Remark: in the case of revenue, it can happen that the zero is normal given that the movie have been distributed for free. However, given that there was 6000 revenue equal to zero, we will simplify those zero as missing value)__
