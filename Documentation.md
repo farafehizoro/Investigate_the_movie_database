@@ -46,3 +46,4 @@ There are 21 columns in the data set, some of them are not useful in our investi
 > * production_companies.
 > * release_date.
 
+**Cleaning step 1:** indentifying and cleaning the duplicated data

@@ -15,4 +15,6 @@ df_movie.describe()
 #Data cleaning: (documentation)
 df_movie.drop(columns=['imdb_id','cast','homepage','director','tagline','keywords','overview','genres','production_companies','release_date'],inplace=True)
 
-
+#drop duplicated
+sum(df_movie.duplicated())
+df_movie.drop_duplicates(inplace=True)
