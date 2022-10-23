@@ -31,3 +31,18 @@ This study is about the **The TMDb movie data**, which is a dataset containing i
 * Is there a relationship between movie's lenght, budget and revenue?
 * How are of movie's length, budget and year of release in general?
 * Is a movie's popularity related to its propriety (year of release, length and budget)?
+
+## Data cleaning
+There are 21 columns in the data set, some of them are not useful in our investigation that we will drop out. Those are:
+
+> * imdb_id.
+> * cast.
+> * homepage.
+> * director.
+> * tagline.
+> * keywords.
+> * overview.
+> * genres.
+> * production_companies.
+> * release_date.
+
