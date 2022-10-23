@@ -18,3 +18,7 @@ df_movie.drop(columns=['imdb_id','cast','homepage','director','tagline','keyword
 #drop duplicated
 sum(df_movie.duplicated())
 df_movie.drop_duplicates(inplace=True)
+
+#data type conversion
+df_movie['budget_adj']=df_movie['budget_adj'].astype(int)
+df_movie['revenue_adj']=df_movie['revenue_adj'].astype(int)

@@ -47,3 +47,5 @@ There are 21 columns in the data set, some of them are not useful in our investi
 > * release_date.
 
 **Cleaning step 1:** indentifying and cleaning the duplicated data
+
+**Cleaning step 2:** Conversion of the data type in the columns: budget_adj and revenue_adj
