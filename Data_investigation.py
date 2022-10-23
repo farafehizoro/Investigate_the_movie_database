@@ -6,3 +6,8 @@ import seaborn as sns
 sns.set_style('darkgrid')
 
 df_movie=pd.read_csv("tmdb-movies.csv")
+
+#dataset description
+df_movie.info()
+df_movie.head(2)
+df_movie.describe()
